@@ -8,9 +8,48 @@ header {
     border: 2px solid pink;
 }
 
-.hero {
-    border: 2px solid red;
+.menu-desktop {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
 }
+
+
+
+
+
+.hero-padre {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+
+    .button-color {
+        width: 200px;
+        height: 50px;
+        background-color: rebeccapurple;
+        border-radius: 20px;
+    }
+
+
+.hero-padre img {
+    width: 443px;
+    height: 443px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .conocimientos {
     border: 2px solid violet;
