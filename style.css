@@ -14,8 +14,12 @@ body {
 
 header {
     border: 2px solid pink;
+    height: 100px;
     background-color: #fbcffc;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 html {
@@ -27,6 +31,7 @@ html {
     padding: 20px 20px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 
 }
 
@@ -101,8 +106,7 @@ html {
 
 .hero-padre {
     border: 2px solid forestgreen;
-    /* margin-top: 50px; */
-    height: 100vh;
+    padding: 70px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,15 +180,16 @@ html {
 
 
 
-/* SECCION MIS CONOCIMIENTOS */
+/* SECCION MIS CONOCIMIENTOS#d5ebf2 */
 
 
 
 
 .conocimientos {
     border: 2px solid violet;
-    background-color: #d5ebf2;
+    background-color:  #cff1ef;
     color: black;
+    padding: 100px 0;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,6 +208,7 @@ html {
     border: 1px solid violet;
     font-size: 45px;
     font-weight: 900;
+    padding: 50px 0;
     
  
 }
@@ -210,6 +216,8 @@ html {
 .conocimientos-texto p {
     border: 1px solid violet;
     margin: 0  20% 20px;
+    padding: 50px 0;
+    font-size: 16px;
 }
 
 
@@ -229,7 +237,7 @@ html {
 .tarjeta-lenguajes {
     min-width: 180px;
     height: 180px; 
-        background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     border: 1px solid gray;
     border-radius: 5px;
     margin: 5px;
@@ -264,10 +272,10 @@ html {
 .frase {
     
     border: 1px solid purple;
-    background-color: blueviolet;
+    background-color: #be79df;
     color: white;
     text-align: center;
-    padding-top: 30px;
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,10 +313,10 @@ html {
 
 .proyectos-padre {
     border: 2px solid green;
-    margin: 40px 0 20px;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -320,65 +328,66 @@ html {
 }
 
 
-.proyectos {
+.proyectos-nav {
     border: 1px solid red;
     font-size: 12px;
     color: black;
     padding: 0 20px;
-   
-}
+   }
 
-
-.button {
-    border: 0;
-    
-    padding: 20 px;
-    margin: 20 px;
-}
 
 .button-all {
     border: 0;
     padding: 5px 20px;
-    background-color: blueviolet;
+    background-color: #be79df;
     color: white;
     border-radius: 20px;
     margin-bottom: 25px;
 }
 
 .button-langs {
-    
+    border: 0;
     padding: 5px 20px;
     background-color: transparent;
     color: black;
     border-radius: 20px;
     margin-bottom: 25px;
-
 }
-
 
 
 
 
 
 .links-proyectos {
+    ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+     
+
+.tarjeta-proyectos {
+    max-width: 340px;
+    min-width: 250px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: 30px;
 }
-
-
-
-
-
 
 .proyectos-padre li {
     width: 90%;
-    
-}
+    border: 1px solid gray;
+    border-radius: 30px;
+    }
 
 .proyectos-padre li img {
     width: 100%;
     height: auto;
+    padding: 10px;
 }
 
 
@@ -390,8 +399,9 @@ html {
 
 
 footer {
-    border: 2px solid blue;
-    background-color: blueviolet;
+    /* border: 2px solid blue; */
+    background-color: #be79df;
+    padding: 30px 0;
 }
 
 
@@ -407,27 +417,27 @@ footer {
 
 
 .menu-desktop-nav {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     padding-top: 30px;
     display: flex;
     justify-content: center;
 }
 
 .menu-desktop-nav li {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 0 10px;
     text-align: center;
     
 }
 
-.menu-desktop-na li a {
-    
+.menu-desktop-nav li a {
+    color: white;
 }
 
 
 
 .redes-sociales {
-    border: 2px solid goldenrod;
+    /* border: 2px solid goldenrod; */
     display: flex;
     justify-content: center;
 }
