@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio Elsa MLot</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+
+    <script src="https://use.fontawesome.com/47a83ff1ec.js"></script>
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 
 </head>
 
 <body>
     <header>
-        <nav class="menu-oculto">
+        <div class="hamburguesa">
+           <i class="fa fa-bars fa-lg" aria-hidden="true"></i> 
+        </div>
+        
+        <nav class="menu-desaparece">
             <ul class="menu-desktop">
                 <li>
                     <a href="#hola">HOLA</a>
@@ -23,43 +35,87 @@
                 <li>
                     <a href="#mis-proyectos">PROYECTOS</a>
                 </li>
-                <li class="boton-contacto">CONTACTO</li>
+                <li class="boton-contacto">
+                    <a href="contacto">CONTACTO</a>
+                </li>
+               
             </ul>
         </nav>
     </header>
 
 
+ <!-- SECCION HERO -->
+
+
     <section class="hero-padre">
-        <h2 id="hola">¡Hola! Soy</h2>
-        <h1>Elsa Mlot</h1>
-        <p>Desarrolladora, curiosa y fan de superar retos.</p>
-        <a class="button-loque" href="#mis-proyectos">LO QUE HAGO</a>
-        <img src="imagenes/ginger-cat-722.png" alt="">
+        <div class="hero-texto">
+            <h2 id="hola">¡Hola! Soy</h2>
+            <h1>Elsa Mlot</h1>
+            <p>Desarrolladora en desarrolo, curiosa y fan de superar retos.</p>
+            <a class="button-loque" href="#mis-proyectos">LO QUE HAGO</a>
+        </div>
+        <div class="imagen-hero">
+           <img src="imagenes/download (2).png" alt=""> 
+        </div>
+        
     </section>
 
+
+
+
+    <!-- SECCION MIS CONOCIMIENTOS -->
+
+    
+
     <section class="conocimientos">
-        <div>
+        <div class="conocimientos-texto">
             <h2 id="mis-conocimientos">Mis conocimientos</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit, eius veniam autem laboriosam
-                sequi
-                vero earum quidem debitis ratione Lorem, ipsum dolor.</p>
+            sequi
+            vero earum quidem debitis ratione Lorem, ipsum dolor.</p>
         </div>
 
         <ul class="padre-lenguajes">
-            <li>
-                <i class="devicon-- de colores"> </i>
+            <li class="tarjeta-lenguajes">
+                <i class="devicon-html5-plain colored"></i>
                 <p>HTML 5</p>
             </li>
-            <li>CSS 3</li>
-            <li>SASS</li>
-            <li>javaScript</li>
-            <li>React</li>
-            <li>GIT</li>
+
+            <li class="tarjeta-lenguajes">
+                <i class="devicon-css3-plain colored"></i>
+                <p>CSS 3</p>
+            </li>
+            <li class="tarjeta-lenguajes">
+                <i class="devicon-sass-original colored"></i>
+                <p>SASS</p>
+            </li>
+            <li class="tarjeta-lenguajes">
+                <i class="devicon-javascript-plain colored"></i>
+                <p>javaScript</p>
+            </li>
+            <li class="tarjeta-lenguajes">
+                <i class="devicon-react-original colored"></i>
+                <p>React</p>
+            </li>
+            <li class="tarjeta-lenguajes">
+                <i class="devicon-git-plain colored"></i>
+                <p>GIT</p>
+            </li>
         </ul>
     </section>
 
-    <section class="frase">
 
+
+
+
+
+
+    <!-- SECCION FRASE -->
+
+    <section class="frase">
+        <div class="quote">
+            <i class="fa fa-quote-right fa-4x" aria-hidden="true "></i>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eveniet perferendis voluptate animi ullam
             accusantium natus nam quo necessitatibus non dolorum et facilis dolore odit dolores, tempore culpa enim
             mollitia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam consequatur,
@@ -69,31 +125,52 @@
         <h2>someone</h2>
     </section>
 
-    <section class="proyectos">
+
+
+
+    <!-- SECCION MIS PROYECTOS  -->
+
+    <section class="proyectos-padre">
         <h2 id="mis-proyectos">Mis proyectos</h2>
-        <ul class="nav-proyectos">
-            <li class="all">Todos</li>
-            <li>HTML/CSS</li>
-            <li>javaScript</li>
-            <li>React</li>
-        </ul>
+
+        <div class="proyectos">
+            <button type="button" 
+            class="button-all">Todos</button>
+            <button type="button" class="button-langs">HTML/CSS</buton>
+            <button type="button" class="button-langs">javaScript</button>
+            <button type="button" class="button-langs">React</button>
+        </div>
+      
+        
         <ul class="links-proyectos">
-            <li class="tarjeta">Portfolio</li>
-
-            <li class="tarjeta">Tienda</li>
-
-            <li class="tarjeta">Juegos de la memoria</li>
-
-            <li v>Controlador de gastos</li>
-
-            <li class="tarjeta">Administrador de reuiones</li>
-
-            <li class="tarjeta">
-                todo app
+            <li class="tarjeta-proyectos">
+                <img src="./imagenes/porfolio.png" alt="">
+                <p>Porfolio</p>
             </li>
-
-            <li class="tarjeta" .t>Buscador de peliculas</li>
-
+            <li class="tarjeta-proyectos">
+                <img src="./imagenes/tienda.png" alt="">
+                <p>Tienda</p>
+            </li>
+            <li class="tarjeta-proyectos">
+                <img src="./imagenes/juegodelamemoria.png" alt="">
+                <p>Juegos de la memoria</p>
+            </li>
+            <li class="tarjeta-proyectos">
+                <img src="./imagenes/controladordegastos.png" alt="">
+                <p>Controlador de gastos</p>
+            </li>
+            <li class="tarjeta-proyectos">
+                <img src="./imagenes/administradordereuniones.png" alt="">
+                <p>Administrador de reuiones</p>
+            </li>
+            <li class="tarjeta-proyectos">
+                <img src="./imagenes/todoapp.png" alt="">
+                <p>todo app</p>
+            </li>
+            <li class="tarjeta-proyectos">
+                <img src="./imagenes/buscadordepeliculas.png" alt="">
+                <p>Buscador de peliculas</p>
+            </li>
         </ul>
 
 
@@ -101,10 +178,12 @@
     </section>
 
 
+    <!-- SECCION FOOTER -->
+
     <footer>
         <div class="contenedor-footer">
-            
-            <nav>
+
+            <nav class="menu-oculto">
                 <ul class="menu-desktop-nav">
                     <li>
                         <a href="#hola">HOLA</a>
@@ -120,15 +199,40 @@
             </nav>
 
 
+
+
             <nav>
                 <ul class="redes-sociales">
-                    <li>twitter</li>
-                    <li>github</li>
-                    <li>linked</li>
-                    <li>mail</li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-github-alt" aria-hidden="true"></i>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </i>
+                </li>
                 </ul>
+
             </nav>
-            <p>Hecho con <span>foto corazon</span> por Ada</p>
+
+
+            <p>Hecho con ❤️ por Ada</p>
         </div>
 
 
