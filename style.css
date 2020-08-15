@@ -180,7 +180,7 @@ html {
 
 
 
-/* SECCION MIS CONOCIMIENTOS#d5ebf2 */
+/* SECCION MIS CONOCIMIENTOS */
 
 
 
@@ -206,11 +206,17 @@ html {
 
 .conocimientos-texto h2 {
     border: 1px solid violet;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 900;
     padding: 50px 0;
     
- 
+}
+
+@media (min-width: 650px) {
+    .conocimientos-texto h2 {
+        font-size: 45px;
+        
+    }
 }
 
 .conocimientos-texto p {
@@ -307,7 +313,7 @@ html {
 
 
 
-/* MIS PROYECTOS  */
+/* SECCION MIS PROYECTOS  */
 
 
 
@@ -373,9 +379,13 @@ html {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     margin: 30px;
+}
+
+.tarjeta-proyectos p {
+    padding: 5px 0;
 }
 
 .proyectos-padre li {
@@ -392,7 +402,7 @@ html {
 
 
 
-
+/* --SECCION FOOOTER */
 
 
 
@@ -451,11 +461,6 @@ footer {
     text-align: center;
     line-height: 40px;
 }
-
-
-
-
-
 
 
 footer p {
