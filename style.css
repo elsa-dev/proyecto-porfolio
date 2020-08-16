@@ -13,10 +13,10 @@ body {
 }
 
 header {
-    border: 2px solid pink;
     height: 100px;
     background-color: #fbcffc;
-    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+    margin-bottom: 50px;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.55);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -38,9 +38,7 @@ html {
 @media (max-width: 650px) {
     .menu-desaparece {
         display: none;
-        
-    }
-   
+    }  
 }
 
 @media (min-width: 650px) {
@@ -51,7 +49,6 @@ html {
 
 
 .menu-desktop {
-    border: 2px solid orange;
     height: 56px;
     padding: 0 30px;
     display: flex;
@@ -60,8 +57,6 @@ html {
 }
 
 .menu-desktop li {
-    border: 2px solid red;
-    color: black;
     height: 40px;
     padding: 20px;
     display: flex;
@@ -69,43 +64,39 @@ html {
        
 }
 
+a {
+    color: black;
+}
+
 .menu-desktop li a:visited {
     color: black;
 }
 
-.boton-contacto a:link {
+.boton-violeta-grande a:link {
     color: white;
 }
 
-.boton-contacto a:visited {
+.boton-violeta-grande a:visited {
     color: white;
 }
 
-.boton-contacto {
-    background-color: #d2a6e7;
+
+.boton-violeta-grande {
+    background-color: #be79df;
     color: white;
     width: 150px;
     height: 40px;
     border-radius: 30px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    
 }
-
-.boton-contacto a:visited {
-    color: white;
-}
-
-
-
-
 
 
 
 /* SECCION HERO */
 
 .hero-padre {
-    border: 2px solid forestgreen;
     padding: 70px 0;
     display: flex;
     flex-direction: column;
@@ -114,15 +105,14 @@ html {
 
 @media (min-width: 1080px){
     .hero-padre {
-        display: flex;
         flex-direction: row;
     } 
 }
 
 .hero-texto {
     width: 90%;
-    border: 1px solid red;
     margin-bottom: 30px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -132,7 +122,9 @@ html {
     .hero-texto {
         align-items: flex-start;
         padding-left: 10%;  
+        text-align: left;
     }
+
 }
 
 .hero-texto h2 {
@@ -154,27 +146,12 @@ html {
 }
 
 
-.button-loque {
-    background-color: #be79df;
-    color: white;
-    width: 150px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
 .imagen-hero {
     width: 90%;
-    border: 1px solid blue;
 }
 
 .imagen-hero img {
-    width: 100%;
-    
-    
+    width: 100%;    
 }
 
 
@@ -186,7 +163,6 @@ html {
 
 
 .conocimientos {
-    border: 2px solid violet;
     background-color:  #cff1ef;
     color: black;
     padding: 100px 0;    
@@ -196,7 +172,6 @@ html {
 }
 
 .conocimientos-texto {
-    border: 1px solid red;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -205,7 +180,6 @@ html {
 }
 
 .conocimientos-texto h2 {
-    border: 1px solid violet;
     font-size: 40px;
     font-weight: 900;
     padding: 50px 0;
@@ -214,13 +188,11 @@ html {
 
 @media (min-width: 650px) {
     .conocimientos-texto h2 {
-        font-size: 45px;
-        
+        font-size: 45px; 
     }
 }
 
 .conocimientos-texto p {
-    border: 1px solid violet;
     margin: 0  20% 20px;
     padding: 50px 0;
     font-size: 16px;
@@ -232,12 +204,10 @@ html {
 .padre-lenguajes {
     width: 70%;
     max-width: 650px;
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 
 
 .tarjeta-lenguajes {
@@ -253,8 +223,6 @@ html {
     justify-content: center;
     align-items: center;
 }
-
-
 
 .conocimientos i {
     font-size: 70px;
@@ -276,8 +244,6 @@ html {
 
 
 .frase {
-    
-    border: 1px solid purple;
     background-color: #be79df;
     color: white;
     text-align: center;
@@ -288,7 +254,6 @@ html {
 }
 
 .quote {
-
     font-size: 20px;  
     font-weight: 900; 
     padding: 40px 0; 
@@ -298,6 +263,11 @@ html {
     font-size: 25px;
     width: 90%;
     padding: 40px 0;
+}
+
+.frase h2 .text-menor {
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .frase p {
@@ -318,7 +288,6 @@ html {
 
 
 .proyectos-padre {
-    border: 2px solid green;
     padding: 100px 0;
     display: flex;
     flex-direction: column;
@@ -335,7 +304,6 @@ html {
 
 
 .proyectos-nav {
-    border: 1px solid red;
     font-size: 12px;
     color: black;
     padding: 0 20px;
@@ -365,7 +333,6 @@ html {
 
 
 .links-proyectos {
-    ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -409,9 +376,10 @@ html {
 
 
 footer {
-    /* border: 2px solid blue; */
     background-color: #be79df;
     padding: 30px 0;
+    margin-top: 50px;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 1.55);
 }
 
 
@@ -427,14 +395,12 @@ footer {
 
 
 .menu-desktop-nav {
-    /* border: 2px solid orange; */
     padding-top: 30px;
     display: flex;
     justify-content: center;
 }
 
 .menu-desktop-nav li {
-    /* border: 2px solid red; */
     margin: 0 10px;
     text-align: center;
     
@@ -447,7 +413,6 @@ footer {
 
 
 .redes-sociales {
-    /* border: 2px solid goldenrod; */
     display: flex;
     justify-content: center;
 }
