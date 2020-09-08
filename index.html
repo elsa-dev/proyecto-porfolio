@@ -9,6 +9,7 @@
 
     <script src="https://use.fontawesome.com/47a83ff1ec.js"></script>
 
+    <!-- este link no funciona - parece ir a un archivo de tu compu, pero no esta subido a github -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
@@ -38,6 +39,7 @@
 
                     <!-- boton violeta boton grande -->
                 
+                    <!-- no es necesario target blank en mailto, ya que siempre se abre una ventana nueva -->
                 <li class="boton-violeta-grande">
                     <a href="mailto: elsa_mlot@hotmail.com" target=”_blank”
                         title="direccion mail de contacto">CONTACTO</a>
@@ -53,6 +55,9 @@
 
     <section class="hero-padre" id="hola">
         <div class="hero-texto">
+             <!-- los titulos deben seguir una jerarquia clara: en este caso, tu hola y tus titulos como 
+                "Mis conocimientos" aunque claramente "Mis conocimientos" tiene una jerarquia mayor a este hola 
+                (que solo acompaña al titulo principal con tu nombre).  -->
             <h2>¡Hola! Soy</h2>
             <h1>Elsa Mlot</h1>
             <p>Desarrolladora en desarrollo, curiosa, cactucera, cat❤️, estudiando en Ada con las mejores teachers y fan de superar retos.</p>
@@ -117,7 +122,8 @@
 
     <!-- SECCION FRASE -->
 
-
+<!-- esta es una seccion: asi la identificas vos misma en el comentario de arriba. 
+corrresponde que la etiqueta sea section, no article -->
     <article class="frase">
         <div class="quote">
             <i class="fa fa-quote-right fa-4x" aria-hidden="true "></i>
@@ -157,6 +163,8 @@
             si tuviera otra vez vida por delante.
             Pero ya ven, tengo 85 años…
             y sé que me estoy muriendo.</p>
+            <!-- Al decir que esta firma es un h2 estas diciendo que tiene la misma jerarquia
+            que "Mis conocimientos". Es asi? Yo creo que corresponderia una menor, como h3.  -->
         <h2> <span class="text-menor">Dicen que</span>
             Borges, 
             <span class="text-menor">pero</span>  
@@ -172,6 +180,7 @@
     <section class="proyectos-padre">
         <h2 id="mis-proyectos">Mis proyectos</h2>
 
+        <!-- aqui deberia ir un guion para separar las dos palabras, no ' -->
         <div class="proyectos'nav">
             <button type="button" class="button-all">Todos</button>
             <button type="button" class="button-langs">HTML/CSS</buton>
@@ -223,6 +232,7 @@
     <!-- SECCION FOOTER -->
 
     <footer>
+        <!-- no veo la necesidad de este div: la clase podria ir en la etiqueta footer  -->
         <div class="contenedor-footer">
 
             <nav class="menu-oculto">
